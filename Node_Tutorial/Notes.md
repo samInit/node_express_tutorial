@@ -109,3 +109,20 @@ Assume we get a request that takes up a lot of time to finish, so what we do is 
 3. Complete out immediate tasks
 2. Then execute the callback
 
+### Asynchronours Programming
+
+### Events and Event driven programming - 
+
+Flow of the program depends on the events being executed.
+
+### What are streams?
+Streams are used to read/write data sequentially.
+When we have to handle streaming data, we use these.
+
+Four different types of streams - 
+- Writable - used to write data sequentially
+- Readable - used to read data sequentially
+- Duplex  - used to both read and write data sequentially
+- Transfrom - data can be modified while writing/reading
+
+Streams extend event emitter class.
