@@ -59,3 +59,18 @@ npm install express --save
 
 Static asset - something the server does not need to change.
 Put them all in the same folder(eg. public) - and express will set up the path, status codes, mime types and everything unlike in node.
+
+We use express to set up API or templates with server side rendering. 
+
+### What is an API in Express/http?
+
+An API means setting up an HTTP interface to interact with our data - data is usually in the form of json (javascript object notation).
+
+With APIs, our server provides data and any frontend app that wants to access and use the data must perform a http request. 
+
+### API vs SSR
+
+To send back our response we use res.json() - which takes care of all the heavy lifting like setting up the proper content type and stringify our data.
+
+SSR - where we will set up templates and send back entire html and css and js ourservels - we use res.render() for this. 
+
