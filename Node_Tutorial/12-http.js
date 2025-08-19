@@ -1,4 +1,7 @@
 const http = require('http')
+//http is a built in module in node
+//req and res are objects
+//.end() is a method we can call on response
 const server = http.createServer((req, res)=>{
     if(req.url=== '/'){
         res.end('Bye guyss, hi ladiess muahhh')
@@ -15,5 +18,7 @@ const server = http.createServer((req, res)=>{
         `)
     }
 })
-
+//for http we have port 80 
+//443 is for secure communication - https
+//should not use 0-1024 as they are already taken
 server.listen(5000)
